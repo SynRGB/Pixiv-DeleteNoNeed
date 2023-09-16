@@ -3,7 +3,7 @@
 // @name:zh-CN          Pixiv-删除无用元素
 // @name:ja             Pixiv-不要な要素を削除
 // @namespace           https://github.com/TitanRGB
-// @version             1.1
+// @version             1.2
 // @description         Hide no need iframe elements which looks like empty space with no meaning.
 // @description:zh-CN   隐藏无用的、看起来意义不明的 iframe 元素造成的空白。
 // @description:ja      無駄で意味不明に見えるiframe要素による空白を隠す。
@@ -37,6 +37,17 @@ let main = function () {
             parent.style.display = 'none';
         }
     }
+
+    const xpath = '//*[@id="root"]/div[2]/div/div[2]/div[2]';
+    const element = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+
+    if (element) {
+        // 检查元素是否只包含空白字符或没有子元素
+        if (!element.hasChildNodes() || /^\s*$/.test(element.innerHTML)) {
+            element.parentNode.removeChild(element);
+        }
+    }
+
     last_run_time = new Date().getTime();
 }
 
