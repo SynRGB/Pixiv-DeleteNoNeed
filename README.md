@@ -10,10 +10,8 @@
 
 ## Description
 
-Hide no need iframe elements which looks like empty space with no meaning.
+Hide the blank spaces caused by useless and seemingly meaningless iframe elements. It is suspected that this comes from the inability to correctly display rendered ad elements when using traffic interception or selective proxy.
+
+Due to the nature of the abnormal fixes, the issue cannot be intuitively tested in normal circumstances, which makes it less maintainable. Therefore, it is recommended to install it only when the screen shows the same issue as in the screenshot below. If this script does not work on the blank parts in the image, feel free to report it via issues.
 
 <img src="https://github.com/SynRGB/Pixiv-DeleteNoNeed/raw/main/%23README/example.png"/>
-<!-- Greasy Fork 更新日志
-## Pixiv-DeleteNoNeed `v1.1`
-- Stable release
--->
