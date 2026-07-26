@@ -16,10 +16,10 @@
 // @license             MPL-2.0
 // @license^            Mozilla Public License 2.0
 // @grant               unsafeWindow
-// @homepageURL         https://github.com/SynRGB/Pixiv-DeleteNoNeed
-// @contributionURL     https://github.com/SynRGB/Pixiv-DeleteNoNeed
-// @updateURL           https://github.com/SynRGB/Pixiv-DeleteNoNeed/releases/new
-// @copyright           Copyright © 2022-PRESENT, TitanRGB (https://github.com/TitanRGB)
+// @homepageURL         https://github.com/MehverSynRGB/Pixiv-DeleteNoNeed
+// @contributionURL     https://github.com/MehverSynRGB/Pixiv-DeleteNoNeed
+// @updateURL           https://github.com/MehverSynRGB/Pixiv-DeleteNoNeed/releases/new
+// @copyright           Copyright (c) 2022 Mehver (https://github.com/Mehver). All rights reserved.
 // @charset             UTF-8
 // @run-at              document-end
 // ==/UserScript==
@@ -64,4 +64,4 @@ observer.observe(document.body, {
     subtree: true
 });
 
-console.log("JS script Pixiv-DeleteNoNeed (Pixiv-删除无用元素) loaded. See more details at https://github.com/SynRGB/Pixiv-DeleteNoNeed");
+console.log("JS script Pixiv-DeleteNoNeed (Pixiv-删除无用元素) loaded. See more details at https://github.com/MehverSynRGB/Pixiv-DeleteNoNeed");
