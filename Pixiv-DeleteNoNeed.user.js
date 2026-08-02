@@ -64,4 +64,4 @@ observer.observe(document.body, {
     subtree: true
 });
 
-console.log("JS script Pixiv-DeleteNoNeed (Pixiv-删除无用元素) loaded. See more details at https://github.com/MehverSynRGB/Pixiv-DeleteNoNeed");
+console.log("Script Pixiv-DeleteNoNeed (Pixiv-删除无用元素) loaded successfully. https://github.com/MehverSynRGB/Pixiv-DeleteNoNeed");
